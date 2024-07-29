@@ -1,0 +1,30 @@
+# astral-linux
+
+astral-linux is my personal os I'm working on. It's meant to be a source-based
+distribution of linux - meaning that the user builds packages locally from
+source.
+
+## Core Tech stack
+
+* llvm/clang/libcxx
+* mold linker
+* musl-libc
+* bearssl
+* suckless userspace (sbase-box/ubase-box)
+* suckless init (sinit)
+* OpenDoas
+* dash
+* mksh
+* awk (onetrueawk)
+
+## dpm
+
+dpm (dynamic package manager) is the WIP package manager for astral-linux. It's
+comprised of two parts:
+
+* dpm-pkg - shell script to build packages
+* dpm - C program to manage packages
+
+### dpm-base-repo
+
+The base repository for dpm-pkg to get packages.
