@@ -1,0 +1,53 @@
+# astral linux
+
+Small toy meta-distro.
+
+# tech stack
+
+kernel:
+  - linux (https://kernel.org)
+coreutils:
+  - sbase (https://core.suckless.org/sbase)
+  - ubase (https://core.suckless.org/ubase)
+  - 9base (https://tools.suckless.org/9base)
+  - sinit (https://core.suckless.org/sinit)
+  - dash (http://gondor.apana.org.au/~herbert/dash)
+  - mksh (http://www.mirbsd.org/mksh.htm)
+  - onetrueawk (https://github.com/onetrueawk/awk)
+  - opendoas (https://github.com/Duncaen/OpenDoas)
+  - mailx (https://heirloom.sourceforge.net/mailx.html)
+  - pax (http://www.mirbsd.org/pax.htm)
+  - make (https://www.gnu.org/software/make)
+  - byacc (https://invisible-island.net/byacc/byacc.html)
+  - flex (https://github.com/westes/flex)
+  - ncurses (https://invisible-island.net/ncurses/ncurses.html)
+libc:
+  - musl (https://musl.libc.org)
+cc chain:
+  - clang (https://clang.llvm.org)
+  - mold (https://github.com/rui314/mold)
+cxx chain:
+  - libcxx (https://libcxx.llvm.org)
+  - clang++ (https://clang.llvm.org)
+tls:
+  - wolfssl (https://www.wolfssl.com/products/wolfssl)
+  - wolfssh (https://www.wolfssl.com/products/wolfssh)
+
+# repos
+
+## dpm
+
+dynamic package manager (dpm) builds xz archives to an empty chroot via a
+shell script, then managed on the system in C.
+
+## dpm-base-repo
+
+Base repository for dpm packages.
+
+## mklive
+
+Scripts to build a bootable iso to install.
+
+## www
+
+Website for astral linux.
